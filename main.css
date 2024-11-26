@@ -1,0 +1,158 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+}
+body {
+  background: #222222;
+}
+/* start header */
+header h1 {
+  font-size: 32px;
+  text-align: center;
+  padding-top: 10px 0px;
+  color: white;
+}
+header h3 {
+  font-size: 24px;
+  text-align: center;
+  padding: 10px 0px;
+  color: white;
+}
+/* end header */
+/* start inputs */
+.Content-Input {
+  height: 50vh;
+  width: 80%;
+  margin: auto;
+}
+.Content-Input input {
+  background: #111111;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  margin: 7px;
+  transition: 0.5s;
+}
+.Content-Input input:focus {
+  transform: scale(1.05);
+  background: #000;
+}
+.Content-Input input:hover {
+  cursor: pointer;
+}
+
+.Content-Input #title,
+.Content-Input #count,
+.Content-Input #category {
+  width: 95%;
+  height: 30px;
+  display: block;
+  margin: 10px auto;
+}
+.Content-Input .money {
+  display: flex;
+  align-items: center;
+  width: 96.5%;
+  margin: auto;
+}
+.Content-Input .money input {
+  width: 16%;
+  height: 30px;
+}
+.Content-Input .money #total {
+  font-size: 19px;
+  font-weight: 500;
+  background: red;
+  padding: 2px;
+  border-radius: 3px;
+}
+.Content-Input .money #total::before {
+  content: "Total: ";
+}
+.Content-Input #create {
+  background: #290765;
+  width: 95%;
+  height: 30px;
+  display: block;
+  margin: 10px auto;
+  border-radius: 15px;
+  border: none;
+  transition: 0.5s;
+}
+.Content-Input #Search {
+  width: 95%;
+  height: 30px;
+  display: block;
+  margin: 10px auto;
+}
+.Content-Input .btn-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Content-Input .btn-search button {
+  background: #290765;
+  width: 45%;
+  height: 30px;
+  display: block;
+  margin: 10px auto;
+  border-radius: 15px;
+  border: none;
+  transition: 0.5s;
+}
+.Content-Input button:hover {
+  background: #18043b;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+/* end inputs */
+/* start list*/
+.list {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.list table {
+  width: 100%;
+  text-align: center;
+}
+.list table th {
+  text-transform: uppercase;
+}
+.list table tr td {
+  padding: 5px;
+}
+.list #L-update,
+.list #L-delete {
+  height: 100%;
+  width: 80%;
+  font-weight: 600;
+  font-size: 15px;
+  background: #290765;
+  border-radius: 10px;
+  border: none;
+  transition: 0.5s;
+}
+.deleteAll {
+  height: 25px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 15px;
+  background: #290765;
+  border-radius: 10px;
+  border: none;
+  margin: 5px;
+  transition: 0.5s;
+}
+.list #L-update:hover,
+.list #L-delete:hover,
+.deleteAll:hover {
+  background: #18043b;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+}
+
+/* end list*/

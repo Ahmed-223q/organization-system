@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="main.css" />
+    <meta name="description" content=".....,....,....," />
+    <meta name="key worlds" content=" " />
+    <meta name="author" content="Ahmed" />
+    <meta http-equiv="refresh" content="for go in other page use url" />
+    <title>CRUDS</title>
+  </head>
+  <body lang="en">
+    <div id="container">
+      <!-- start header -->
+      <header>
+        <h1>CRUDS</h1>
+        <h3>Create Read Update Delete Search</h3>
+      </header>
+      <!-- end header -->
+
+      <!-- start inputs -->
+      <section class="Content-Input">
+        <input title="title" type="text" id="title" placeholder="  Title" />
+
+        <div class="money">
+          <input
+            title="price"
+            onkeyup="getTotal()"
+            type="number"
+            id="price"
+            placeholder="  Price"
+          />
+          <input
+            title="taxes"
+            onkeyup="getTotal()"
+            type="number"
+            id="taxes"
+            placeholder="  Taxes"
+          />
+          <input
+            title="ads"
+            onkeyup="getTotal()"
+            type="number"
+            id="ads"
+            placeholder="  ads"
+          />
+          <input
+            title="profit"
+            onkeyup="getTotal()"
+            type="number"
+            id="profit"
+            placeholder="  Profit"
+          />
+          <input
+            title="discount"
+            onkeyup="getTotal()"
+            type="number"
+            id="discount"
+            placeholder="  Discount"
+          />
+          <small id="total"></small>
+        </div>
+
+        <input title="count" type="number" id="count" placeholder="  Count" />
+        <input
+          title="category"
+          type="text"
+          id="category"
+          placeholder="   Category"
+        />
+        <button id="create">Create</button>
+        <!--  -->
+        <input
+          onkeyup="searchDate(this.value)"
+          title="Search"
+          type="text"
+          id="Search"
+          placeholder="   Search"
+        />
+        <div class="btn-search">
+          <button onclick="getSearch(this.id)" id="By-title">
+            Search By Title
+          </button>
+          <button onclick="getSearch(this.id)" id="By-category">
+            Search By Category
+          </button>
+        </div>
+      </section>
+      <!-- end inputs -->
+
+      <!-- start list -->
+      <section class="list">
+        <div id="deleteAll"></div>
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Taxes</th>
+            <th>Ads</th>
+            <th>Profit</th>
+            <th>Discount</th>
+            <th>Total</th>
+            <th>Category</th>
+            <th>Update</th>
+            <th>Delete</th>
+          </tr>
+          <tbody id="tbody"></tbody>
+        </table>
+      </section>
+      <!-- end list -->
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
+
